@@ -1,0 +1,25 @@
+﻿<Window x:Class="Projekat.Uspjesno_licni"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Uspjesno_licni" Height="462" Width="624.5">
+
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Height="440" VerticalAlignment="Bottom" Margin="0,0,0,10">
+        <Image Margin="265,36,102,10" Source="glavna.PNG" Stretch="Fill"/>
+        <TextBox HorizontalAlignment="Left" Height="73" Margin="298,226,0,0" TextWrapping="Wrap" Text="Uspjesno ste sacuvali podatke." VerticalAlignment="Top" Width="180" FontSize="18" FontWeight="Bold"/>
+        <Button Content="POCETNA" HorizontalAlignment="Left" Height="35" Margin="325,314,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" FontSize="18" FontWeight="Bold" Background="#FFFBE3E3"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="360,139,0,0" VerticalAlignment="Top" Width="54" Height="48" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3" FontSize="14" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="images.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="285,392,0,0" VerticalAlignment="Top" Width="40" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

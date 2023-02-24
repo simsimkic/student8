@@ -1,0 +1,8 @@
+1,Vutra,100,Mnogo dobra,True
+4,Heroin,60,Odlican,True
+3,Asepsol,40,Mnogo dobar,True
+2,Brufen,50,Mnogo dobar,True
+3,Asepsol,40,Mnogo dobar,True
+3,Asepsol,40,Mnogo dobar,True
+1,Vutra,100,Mnogo dobra,True
+4,Heroin,60,Odlican,True

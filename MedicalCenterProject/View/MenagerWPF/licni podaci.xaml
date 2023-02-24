@@ -1,0 +1,52 @@
+﻿<Window x:Class="Projekat.licni_podaci"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="licni_podaci" Height="420.672" Width="635.508">
+
+    <Grid Margin="0,0,2,2" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
+        <Image Margin="270,10,156,22" Source="glavna.PNG" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="281,109,0,0" TextWrapping="Wrap" Text="Unesite licne podatke:" VerticalAlignment="Top" Height="34" Width="172" FontSize="16" TextDecorations="Underline"/>
+        <TextBox HorizontalAlignment="Left" Height="71" Margin="281,143,0,0" TextWrapping="Wrap" Text="JMBG:&#xD;&#xA;Adresa;&#xD;&#xA;Ime oca:" VerticalAlignment="Top" Width="71" TextChanged="TextBox_TextChanged" FontSize="16" FontWeight="Bold"/>
+        <Button Content="SACUVAJ PODATKE" HorizontalAlignment="Left" Height="32" Margin="298,257,0,0" VerticalAlignment="Top" Width="137" FontSize="14" FontWeight="Bold" Click="Button_Click" Background="#FFFFE8E8"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.134"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.134"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.134"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="" HorizontalAlignment="Left" Margin="281,331,0,0" VerticalAlignment="Top" Width="34" Height="23" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

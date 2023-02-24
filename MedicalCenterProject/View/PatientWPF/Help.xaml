@@ -1,0 +1,17 @@
+﻿<Window x:Class="MedicalCenterProject.View.PatientWPF.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenterProject.View.PatientWPF"
+        mc:Ignorable="d"
+        Title="Help" Height="750" Width="430">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="108" Margin="68,35,0,0" TextWrapping="Wrap" Text="Welcome to our help center." VerticalAlignment="Top" Width="301" FontSize="36" TextAlignment="Center" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="521" Margin="24,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" TextAlignment="Justify" FontSize="16"><Run Text="If you click on "/><Run FontWeight="Bold" Text="&quot;Menu&quot; "/><Run Text="on main page you can find:"/><LineBreak/><Run FontWeight="Bold" Text="1)Medical history"/><Run Text="-here you can find all your examinations and see medical reports."/><LineBreak/><Run FontWeight="Bold" Text="2)Examination"/><Run Text="-here you can schedule an examination."/><LineBreak/><Run FontWeight="Bold" Text="3)Consultation with M.D."/><Run Text="-here you can schedule concultation if you can't come to the hospital for some reason."/><LineBreak/><Run Text="4"/><Run FontWeight="Bold" Text=")Therapy reports"/><Run Text="-"/><Run Text="this section serves to choose when you take the medication and to mark the box each time as you and your doctor have an insight into the therapy process."/><LineBreak/><Run/><LineBreak/><Run Text="In "/><Run FontWeight="Bold" Text="&quot;General&quot; "/><Run Text="menu you can find:"/><LineBreak/><Run FontWeight="Bold" Text="1)Send feedback"/><Run Text="-here you can rate the application and write your opinion about it."/><LineBreak/><Run FontWeight="Bold" Text="2)Ask a question"/><Run Text="-here you can ask a question if you have any doubts. The answer will be sent to your e-mail address as soon as possible."/><LineBreak/><Run FontWeight="Bold" Text="3"/><Run FontWeight="Bold" Text=")Account"/><Run Text="-here you can view your profile and change your details if necessary."/><LineBreak/><Run/><LineBreak/><Run Text="Don't forget to rate the app. Thank you for using our application."/><LineBreak/><Run/></TextBlock>
+        <Button Content="Go back" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="94" Click="Button_Click" FontSize="16" FontWeight="Bold" Background="#FF67F4E8"/>
+        <TextBox x:Name="patientIdTextBox" HorizontalAlignment="Left" Height="37" Margin="10,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="53"/>
+
+
+    </Grid>
+</Window>

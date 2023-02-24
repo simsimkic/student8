@@ -1,0 +1,55 @@
+﻿<Window x:Class="Projekat.OSOBLJE"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="OSOBLJE" Height="442.857" Width="697.619">
+
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
+        <Image Margin="308,18,172,10"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="327,75,0,0" TextWrapping="Wrap" Text="OSOBLJE" VerticalAlignment="Top" Width="80" FontSize="16" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="318,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"><Run Text="LISTA ZAPOSLENIH" TextDecorations="Underline"/><Run Text=":"/></TextBlock>
+        <Button Content="PRIKAZI " HorizontalAlignment="Left" Height="31" Margin="371,267,0,0" VerticalAlignment="Top" Width="69" FontWeight="Bold" FontSize="14" Click="Button_Click_1" Background="#FFFBE0E0"/>
+        <Button Content="DODAJ ZAPOSLENOG" HorizontalAlignment="Left" Height="31" Margin="346,303,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click" FontWeight="Bold" Background="#FFDBF5F5"/>
+        <Image Margin="318,99,181,247" Source="CapturFSDFSDFSDe.PNG" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="318,112,0,0" VerticalAlignment="Top" Width="33" Height="36" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="JD-17-512.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="356,112,0,0" VerticalAlignment="Top" Width="32" Height="36" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="670795.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="393,112,0,0" VerticalAlignment="Top" Width="33" Height="36" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="medical-logo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="431,112,0,0" VerticalAlignment="Top" Width="33" Height="36" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="logo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="469,112,0,0" VerticalAlignment="Top" Width="32" Height="36" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_6">
+            <Button.Background>
+                <ImageBrush ImageSource="JKP-Prostor-Sombor.jpg"/>
+            </Button.Background>
+        </Button>
+        <RadioButton Content="SPECIJALISTE" HorizontalAlignment="Left" Margin="318,192,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <RadioButton Content="MED. SESTRE" HorizontalAlignment="Left" Margin="318,212,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="RadioButton_Checked"/>
+        <RadioButton Content="LJEKARI" HorizontalAlignment="Left" Margin="318,232,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="361" Margin="308,38,0,0" VerticalAlignment="Top" Width="201"/>
+        <Image Margin="442,52,189,305" Source="logo (1).png" Stretch="Fill"/>
+        <Image Margin="393,352,256,31" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.577,1.396"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="322,353,0,0" VerticalAlignment="Top" Width="29" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

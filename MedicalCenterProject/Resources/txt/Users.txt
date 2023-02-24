@@ -1,0 +1,7 @@
+djomla,djomla,djomla@gmail.com,djomla,1582480989,Patient,1234567891234
+milan,milan,milan@gmail.com,milan,1216897413,Secretary,1234567891233
+milan,marjanov,marjanov@gmail.com,marjanov,-432172307,Patient,0505998850228
+milan,marjanov,milanm@gmail.com,milanm,1219191173,Patient,0505998850228
+stefan,stefan,stefan@gmail.com,stefan,1582480989,Doctor,1231231231231
+pera,pera,pera@gmail.com,pera,1582480989,Menager,1234567891233
+a,a,a@,a,a,Doctor

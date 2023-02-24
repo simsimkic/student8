@@ -1,0 +1,35 @@
+﻿<Window x:Class="Projekat.Uspjesno_termin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Uspjesno_termin" Height="455.952" Width="753.571">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="272,18,131,10"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="289,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="16" FontWeight="Bold"><Run Text="PROSTORIJE"/><LineBreak/><Run Text="Termin pregleda"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="80" Margin="299,176,0,0" TextWrapping="Wrap" Text="Uspjesno ste zakazali termin pregleda" VerticalAlignment="Top" Width="157" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Zakazi novi termin" HorizontalAlignment="Left" Height="36" Margin="312,297,0,0" VerticalAlignment="Top" Width="144" FontSize="14" FontWeight="Bold" Click="Button_Click" Background="#FFFFE3E3"/>
+        <Image Margin="284,101,140,272" Source="CapturFSDFSDFSDe.PNG" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="355,116,0,0" VerticalAlignment="Top" Width="50" Height="37" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3" FontSize="14" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="images.jpg"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="360" Margin="284,45,0,0" VerticalAlignment="Top" Width="190"/>
+        <Image Margin="414,45,140,324" Source="logo (1).png" Stretch="Fill"/>
+        <Image Margin="365,361,209,36" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.609,0.351"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="299,361,0,0" VerticalAlignment="Top" Width="33" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

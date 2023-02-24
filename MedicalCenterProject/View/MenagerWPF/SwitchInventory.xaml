@@ -1,0 +1,57 @@
+﻿<Window x:Class="MedicalCenterProject.View.MenagerWPF.SwitchInventory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenterProject.View.MenagerWPF"
+        mc:Ignorable="d"
+        Title="SwitchInventory" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="297,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="16" FontWeight="Bold" Text="PROMISES"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="297,159,0,0" TextWrapping="Wrap" Text="Switching inventory:" VerticalAlignment="Top" Width="172" FontSize="16" TextDecorations="Underline" RenderTransformOrigin="0.483,0.161"/>
+        <Button Content="Switch invetory" HorizontalAlignment="Left" Height="37" Margin="309,298,0,0" VerticalAlignment="Top" Width="149" FontSize="16" FontWeight="Bold" Click="Button_Click" Background="#FF976868"/>
+        <Image Margin="288,99,207,268" Source="CapturFSDFSDFSDe.PNG" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="288,104,0,0" VerticalAlignment="Top" Width="33" Height="34" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="JD-17-512.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="326,104,0,0" VerticalAlignment="Top" Width="32" Height="34" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="670795.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="363,104,0,0" VerticalAlignment="Top" Width="31" Height="34" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="medical-logo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="399,104,0,0" VerticalAlignment="Top" Width="33" Height="34" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="logo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="437,104,0,0" VerticalAlignment="Top" Width="32" Height="34" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="JKP-Prostor-Sombor.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="438,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="438,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="438,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="438,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31"/>
+        <RadioButton Content="Computers" HorizontalAlignment="Left" Margin="297,193,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Equipment" HorizontalAlignment="Left" Margin="297,213,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked_1"/>
+        <RadioButton Content="Beds" HorizontalAlignment="Left" Margin="297,235,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked_2"/>
+        <RadioButton Content="Appliances" HorizontalAlignment="Left" Margin="297,257,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked_3"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="378" Margin="272,17,0,0" VerticalAlignment="Top" Width="220"/>
+        <Image Margin="410,39,323,325" Source="logo (1).png" Stretch="Fill"/>
+        <Image Margin="370,353,385,38" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.577,1.396"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="297,353,0,0" VerticalAlignment="Top" Width="29" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

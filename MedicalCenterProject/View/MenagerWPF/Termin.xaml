@@ -1,0 +1,52 @@
+﻿<Window x:Class="Projekat.Termin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Termin" Height="441.667" Width="773.81">
+
+    <Grid>
+        <Image Margin="279,10,276,18"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="42" Margin="296,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="16" FontWeight="Bold"><Run Text="PROSTORIJE"/><LineBreak/><Run Text="Termin pregleda"/></TextBlock>
+        <Button Content="Provjeri zakazane termine" HorizontalAlignment="Left" Height="37" Margin="296,182,0,0" VerticalAlignment="Top" Width="179" FontSize="14" FontWeight="Bold" Click="Button_Click_6" Background="#FFDDF7D9"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="296,224,0,0" TextWrapping="Wrap" Text="Zakazi termin pregleda:" VerticalAlignment="Top" Width="179" FontSize="14" TextDecorations="Underline" FontWeight="Bold"/>
+        <DatePicker HorizontalAlignment="Left" Margin="296,259,0,0" VerticalAlignment="Top"/>
+        <Button Content="Zakazi termin" HorizontalAlignment="Left" Height="27" Margin="328,309,0,0" VerticalAlignment="Top" Width="118" FontSize="14" FontWeight="Bold" Click="Button_Click_1" Background="#FFF9DEDE"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="297,112,0,0" VerticalAlignment="Top" Width="32" Height="40" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="JD-17-512.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="334,112,0,0" VerticalAlignment="Top" Width="30" Height="40" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="670795.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="369,112,0,0" VerticalAlignment="Top" Width="31" Height="40" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="medical-logo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="405,112,0,0" VerticalAlignment="Top" Width="31" Height="40" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="logo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="441,112,0,0" VerticalAlignment="Top" Width="34" Height="40" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="JKP-Prostor-Sombor.jpg"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="368" Margin="279,25,0,0" VerticalAlignment="Top" Width="211"/>
+        <Image Margin="369,356,357,27" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.609,0.351"/>
+        <Image Margin="421,31,278,315" Source="logo (1).png" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="296,356,0,0" VerticalAlignment="Top" Width="33" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="Projekat.Broj_lekova"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Broj_lekova" Width="698" Height="510">
+
+    <Grid Margin="0,0,2,6">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="303,18,25,79"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="314,64,0,0" TextWrapping="Wrap" Text="LIJEKOVI" VerticalAlignment="Top" Width="94" FontSize="16" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="314,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="16" TextDecorations="Underline"><Run Text="Stanje lijekova"/><Run Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="314,199,0,0" TextWrapping="Wrap" Text="Paracetamol:    150&#xA;&#xA;" VerticalAlignment="Top" Width="154" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="314,230,0,0" TextWrapping="Wrap" Text="Sepsol:             250" VerticalAlignment="Top" Width="154" TextChanged="TextBox_TextChanged" FontSize="16"/>
+        <Button Content="Dodaj lijek" HorizontalAlignment="Left" Height="28" Margin="334,291,0,0" VerticalAlignment="Top" Width="134" FontSize="16" FontWeight="Bold" Click="Button_Click_1" Background="#FFFBDDDD"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="314,103,0,0" VerticalAlignment="Top" Width="31" Height="39" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="JD-17-512.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="350,103,0,0" VerticalAlignment="Top" Width="31" Height="39" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="670795.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="386,103,0,0" VerticalAlignment="Top" Width="30" Height="39" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_4">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.119"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="medical-logo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="422,103,0,0" VerticalAlignment="Top" Width="30" Height="39" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="logo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="457,103,0,0" VerticalAlignment="Top" Width="33" Height="39" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_6">
+            <Button.Background>
+                <ImageBrush ImageSource="JKP-Prostor-Sombor.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image Margin="430,42,25,375" Source="logo (1).png" Stretch="Fill"/>
+        <Image Margin="387,347,88,98" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.609,0.351"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="316,347,0,0" VerticalAlignment="Top" Width="29" Height="28" Click="Button_Click_7">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="361" Margin="303,18,0,0" VerticalAlignment="Top" Width="205"/>
+
+    </Grid>
+</Window>

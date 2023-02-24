@@ -1,0 +1,55 @@
+﻿<Window x:Class="MedicalCenterProject.View.MenagerWPF.Doctors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenterProject.View.MenagerWPF"
+        mc:Ignorable="d"
+        Title="Doctors" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
+        <Image Margin="295,10,289,18"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="324,71,0,0" TextWrapping="Wrap" Text="DOCTORS" VerticalAlignment="Top" Width="99" FontSize="14" FontWeight="Bold"/>
+        <Button Content="Add an employee" HorizontalAlignment="Left" Height="32" Margin="332,306,0,0" VerticalAlignment="Top" Width="148" FontWeight="Bold" Click="Button_Click_5"/>
+        <TextBlock HorizontalAlignment="Left" Height="103" Margin="312,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" FontSize="14" FontWeight="Bold"><Run Text="Marko Peric       16.05.1975"/><LineBreak/><Run/><LineBreak/><Run Text="Simona Matic    19.01.1986"/><LineBreak/><Run/><LineBreak/><Run Text="Marijana Maric 10.07.1987"/></TextBlock>
+        <Image Margin="306,97,292,262" Source="CapturFSDFSDFSDe.PNG" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="3.691"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.935"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="" HorizontalAlignment="Left" Margin="312,111,0,0" VerticalAlignment="Top" Width="33" Height="35" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="JD-17-512.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="&#x9;" HorizontalAlignment="Left" Margin="350,111,0,0" VerticalAlignment="Top" Width="33" Height="35" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="670795.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="388,111,0,0" VerticalAlignment="Top" Width="33" Height="35" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="medical-logo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="426,111,0,0" VerticalAlignment="Top" Width="33" Height="35" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="logo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="464,111,0,0" VerticalAlignment="Top" Width="33" Height="35" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="JKP-Prostor-Sombor.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="312,159,0,0" TextWrapping="Wrap" Text="Year of employment:" VerticalAlignment="Top" TextDecorations="Underline" FontSize="14" Width="179"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="363" Margin="295,38,0,0" VerticalAlignment="Top" Width="208"/>
+        <Image Margin="390,361,369,30" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.577,1.396"/>
+        <Image Margin="428,46,296,313" Source="logo (1).png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

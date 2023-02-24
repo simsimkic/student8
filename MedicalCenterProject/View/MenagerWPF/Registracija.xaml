@@ -1,0 +1,36 @@
+﻿<Window x:Class="Projekat.Registracija"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Registracija" Width="470.81" Height="460">
+
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Margin="10,0,2,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,45,31" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="113" FontSize="14" Grid.Column="1"><Run Text="Na"/><Run Text="ša bolnica"/><LineBreak/><Run Text="055"/><Run Text="/555-333"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="19,120,0,0" TextWrapping="Wrap" Text="UNESITE PODATKE:" VerticalAlignment="Top" Width="135" FontSize="14" TextDecorations="Underline" FontWeight="Bold" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="133" Margin="19,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" FontSize="14" Grid.Column="1"><Run Text="Ime:"/><LineBreak/><Run Text="Prezime:"/><LineBreak/><Run Text="E-mail:"/><LineBreak/><Run Text="Sifra:"/><LineBreak/><Run Text="Telefon:"/><LineBreak/><Run/><LineBreak/><Run Text="Datum rodjenja:"/></TextBlock>
+        <Button Content="REGISTRUJ SE" HorizontalAlignment="Left" Margin="71,288,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click" Height="32" FontWeight="Bold" FontSize="14" Grid.Column="1" Background="#FFFDE3E3"/>
+        <DatePicker HorizontalAlignment="Left" Margin="129,248,0,0" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="0.804,0.792" Width="103"/>
+        <Image Margin="243,374,73,22" Source="home-button.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="114,363,134,41" Source="home-button.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.609,0.351"/>
+        <Image Margin="149,25,62,333" Source="logo (1).png" Stretch="Fill" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="129,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="129,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="129,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="129,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="129,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="31,363,0,0" VerticalAlignment="Top" Width="34" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

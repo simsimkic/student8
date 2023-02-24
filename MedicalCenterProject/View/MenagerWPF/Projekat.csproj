@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{210F7FAB-A761-46A2-B28A-15FB1FE43C76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekat</RootNamespace>
+    <AssemblyName>Projekat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.5.15\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.5.15.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.5.15\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=18.1460.0.56, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.18.1.0.56\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=18.1460.0.56, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.18.1.0.56\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=18.1460.0.56, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.Wpf.18.1.0.56\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Broj lekova.xaml.cs">
+      <DependentUpon>Broj lekova.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prostorije.cs" />
+    <Compile Include="dodaj zaposlenog.xaml.cs">
+      <DependentUpon>dodaj zaposlenog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DodajLijek1.xaml.cs">
+      <DependentUpon>DodajLijek1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inventar.xaml.cs">
+      <DependentUpon>Inventar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Izabir prostorije.xaml.cs">
+      <DependentUpon>Izabir prostorije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj prostorije.xaml.cs">
+      <DependentUpon>Izvestaj prostorije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Izvestaj.xaml.cs">
+      <DependentUpon>Izvestaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lekovi1.xaml.cs">
+      <DependentUpon>Lekovi1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="licni podaci.xaml.cs">
+      <DependentUpon>licni podaci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ljekari.xaml.cs">
+      <DependentUpon>Ljekari.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Med sestra.xaml.cs">
+      <DependentUpon>Med sestra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OSOBLJE.xaml.cs">
+      <DependentUpon>OSOBLJE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pocetna strana.xaml.cs">
+      <DependentUpon>Pocetna strana.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="POMOC.xaml.cs">
+      <DependentUpon>POMOC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Popunjenost prostorije.xaml.cs">
+      <DependentUpon>Popunjenost prostorije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prebacivanje inventara.xaml.cs">
+      <DependentUpon>Prebacivanje inventara.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PRIKAZ Prostorija.xaml.cs">
+      <DependentUpon>PRIKAZ Prostorija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PROFIL.xaml.cs">
+      <DependentUpon>PROFIL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prostorije.xaml.cs">
+      <DependentUpon>Prostorije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reg uspjesno.xaml.cs">
+      <DependentUpon>Reg uspjesno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Registracija.xaml.cs">
+      <DependentUpon>Registracija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Renoviraj.xaml.cs">
+      <DependentUpon>Renoviraj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="resetovanje.xaml.cs">
+      <DependentUpon>resetovanje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Specijalista.xaml.cs">
+      <DependentUpon>Specijalista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Termin.xaml.cs">
+      <DependentUpon>Termin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USPJESNO DODAVANJE.xaml.cs">
+      <DependentUpon>USPJESNO DODAVANJE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Uspjesno inventar.xaml.cs">
+      <DependentUpon>Uspjesno inventar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Uspjesno licni.xaml.cs">
+      <DependentUpon>Uspjesno licni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USPJESNOlijek.xaml.cs">
+      <DependentUpon>USPJESNOlijek.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USPJESNO profil.xaml.cs">
+      <DependentUpon>USPJESNO profil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Uspjesno renoviranje.xaml.cs">
+      <DependentUpon>Uspjesno renoviranje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Uspjesno termin.xaml.cs">
+      <DependentUpon>Uspjesno termin.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Broj lekova.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="dodaj zaposlenog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DodajLijek1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inventar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Izabir prostorije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Izvestaj prostorije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Izvestaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lekovi1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="licni podaci.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ljekari.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Med sestra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OSOBLJE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pocetna strana.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="POMOC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Popunjenost prostorije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prebacivanje inventara.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PRIKAZ Prostorija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PROFIL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prostorije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reg uspjesno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registracija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Renoviraj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resetovanje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Specijalista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Termin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USPJESNO DODAVANJE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uspjesno inventar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uspjesno licni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USPJESNOlijek.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USPJESNO profil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uspjesno renoviranje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uspjesno termin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="a727f4eed8b129aa4e1e46efcb110a0b_digital-time-clipart_1920-1080.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="glavna.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Capture1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CaptureSAD.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include=".PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="jeste.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CapturFSDFSDFSDe.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="belo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="JD-17-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="medical-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="670795.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="JKP-Prostor-Sombor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="medical-appointment-doctor-healthcare-40568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="thumb16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gtk-go-back-ltr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="first-aid-symbol-picture-id816820042.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="d31hfy2-75d65b8c-cb7d-4dbd-883c-eff126766fec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="01268b64847f0a965347448a0a053b5c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1481_1351100850_centrook3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="heart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nature-Medical-Logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="Projekat.Uspjesno_renoviranje"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d"
+      Title="Uspjesno_renoviranje" Height="439.286" Width="777.381">
+
+    <Grid>
+        <Image Margin="251,10,296,18"  Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="42" Margin="277,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="16" FontWeight="Bold"><Run Text="PROSTORIJE"/><LineBreak/><Run Text="Renoviranje"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="75" Margin="277,171,0,0" TextWrapping="Wrap" Text="Uspjesno ste zakazali termin renoviranja" VerticalAlignment="Top" Width="180" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Zakazi novi termin" HorizontalAlignment="Left" Height="36" Margin="295,274,0,0" VerticalAlignment="Top" Width="144" FontSize="14" FontWeight="Bold" Click="Button_Click" Background="#FFFBE3E3"/>
+        <Image Margin="261,93,304,242" Source="CapturFSDFSDFSDe.PNG" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="343,110,0,0" VerticalAlignment="Top" Width="50" Height="37" RenderTransformOrigin="-0.741,-2.455" Click="Button_Click_3" FontSize="14" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="images.jpg"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="357" Margin="261,33,0,0" VerticalAlignment="Top" Width="204"/>
+        <Image Margin="353,348,376,32" Source="home-button.png" Stretch="Fill" RenderTransformOrigin="0.609,0.351"/>
+        <Image Margin="393,43,316,309" Source="logo (1).png" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="277,348,0,0" VerticalAlignment="Top" Width="33" Height="28" Click="Button_Click_7" RenderTransformOrigin="0.103,2.786">
+            <Button.Background>
+                <ImageBrush ImageSource="Gtk-go-back-ltr.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
